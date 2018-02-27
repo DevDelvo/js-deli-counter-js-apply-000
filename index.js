@@ -22,6 +22,7 @@ function currentLine(katzDeliLine) {
   var line = [];
   if (klength === 0) {
     return "The line is currently empty.";
+<<<<<<< HEAD
   } else if (klength > 1 ) {
       for (var i = 0; i < klength; i++) {
         var kname = katzDeliLine[i];
@@ -29,5 +30,13 @@ function currentLine(katzDeliLine) {
       }
   }
   return `The line is currently: ${line.join(", ")}`;
+=======
+  } else if (klength < 1 ) {
+      for (var i = 0; i < klength; i++) {
+        line.push(`${i}. ${name}`);
+      }
+  }
+  return line;
+>>>>>>> 808395069d803fa6d1ab551cbdc610beea5d8c9e
 }
 
